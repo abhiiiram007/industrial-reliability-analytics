@@ -29,17 +29,147 @@ CRITICALITY_COLORS = {
 st.markdown(
     """
     <style>
-      .stApp { background: #F4F6F8; color: #202B35; }
-      [data-testid="stSidebar"] { background: #E9EEF2; }
-      .block-container { padding-top: 1.5rem; padding-bottom: 2.5rem; }
-      h1, h2, h3 { color: #203B50; }
-      div[data-testid="stMetric"] {
-        background: #FFFFFF; border: 1px solid #D9E1E7;
-        padding: 14px 16px; border-radius: 10px;
-      }
-      div[data-testid="stMetricLabel"] { color: #526777; }
-      div[data-testid="stMetricValue"] { color: #203B50; }
-      hr { border-color: #D9E1E7; }
+    :root { color-scheme: light; }
+
+    /* ---------- Global theme ---------- */
+    .stApp {
+        background: #F3F6FA;
+        color: #1E293B;
+    }
+
+    .block-container {
+        max-width: 1500px;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    h1, h2, h3, h4 {
+        color: #16324F !important;
+        font-weight: 700 !important;
+        letter-spacing: -0.4px;
+    }
+
+    p, li, label,
+    [data-testid="stMarkdownContainer"],
+    [data-testid="stWidgetLabel"],
+    [data-testid="stCaptionContainer"] {
+        color: #475569;
+    }
+
+    /* ---------- Sidebar ---------- */
+    [data-testid="stSidebar"] {
+        background: #E8EEF5;
+        border-right: 1px solid #D5DEE9;
+    }
+
+    [data-testid="stSidebar"] h1,
+    [data-testid="stSidebar"] h2,
+    [data-testid="stSidebar"] h3,
+    [data-testid="stSidebar"] p,
+    [data-testid="stSidebar"] label,
+    [data-testid="stSidebar"] [data-testid="stWidgetLabel"] {
+        color: #16324F !important;
+    }
+
+    [data-testid="stSidebar"] [data-baseweb="select"] > div {
+        background: #FFFFFF !important;
+        border: 1px solid #CBD5E1 !important;
+        border-radius: 8px !important;
+    }
+
+    [data-testid="stSidebar"] [data-baseweb="tag"] {
+        background: #315A78 !important;
+        border: none !important;
+    }
+
+    [data-testid="stSidebar"] [data-baseweb="tag"] span {
+        color: #FFFFFF !important;
+    }
+
+    [data-testid="stSidebar"] [data-baseweb="select"] input {
+        color: #203B50 !important;
+    }
+
+    /* ---------- KPI cards ---------- */
+    [data-testid="stMetric"] {
+        background: #FFFFFF;
+        border: 1px solid #DCE5EE;
+        border-radius: 14px;
+        padding: 18px 20px;
+        box-shadow: 0 4px 14px rgba(22, 50, 79, 0.05);
+    }
+
+    [data-testid="stMetricLabel"],
+    [data-testid="stMetricLabel"] p {
+        color: #64748B !important;
+        font-size: 0.88rem !important;
+    }
+
+    [data-testid="stMetricValue"],
+    [data-testid="stMetricValue"] div {
+        color: #16324F !important;
+        font-weight: 700 !important;
+    }
+
+    /* ---------- Warning banner ---------- */
+    [data-testid="stAlert"] {
+        background: #FFF4DF !important;
+        border: 1px solid #F1D49A !important;
+        border-radius: 10px;
+    }
+
+    [data-testid="stAlert"] p,
+    [data-testid="stAlert"] span,
+    [data-testid="stAlert"] div {
+        color: #754C0E !important;
+    }
+
+    /* ---------- Charts and tables ---------- */
+    [data-testid="stDataFrame"],
+    [data-testid="stTable"] {
+        border: 1px solid #DCE5EE;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #FFFFFF;
+    }
+
+    [data-testid="stPlotlyChart"] {
+        background: #FFFFFF;
+        border: 1px solid #E1E8F0;
+        border-radius: 14px;
+        padding: 10px;
+        box-shadow: 0 3px 12px rgba(22, 50, 79, 0.035);
+    }
+
+    /* ---------- Download button ---------- */
+    .stDownloadButton button {
+        background: #16324F !important;
+        color: #FFFFFF !important;
+        border: none !important;
+        border-radius: 9px !important;
+        padding: 0.6rem 1rem;
+        font-weight: 600;
+    }
+
+    .stDownloadButton button:hover {
+        background: #E87524 !important;
+        color: #FFFFFF !important;
+    }
+
+    /* ---------- Dividers and responsive spacing ---------- */
+    hr {
+        border-color: #DCE5EE !important;
+    }
+
+    [data-testid="stCaptionContainer"] {
+        color: #64748B !important;
+    }
+
+    @media (max-width: 900px) {
+        .block-container {
+            padding: 1rem;
+        }
+    }
     </style>
     """,
     unsafe_allow_html=True,
