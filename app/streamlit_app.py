@@ -1,12 +1,310 @@
+from pathlib import Path
+
+import pandas as pd
+import plotly.express as px
+import streamlit as st
+
+# ------------------------------------------------------------
+# PlantPulse — Industrial Reliability & Maintenance Analytics
+# ------------------------------------------------------------
+ROOT = Path(__file__).resolve().parents[1]
+DATA = ROOT / "data"
+
+st.set_page_config(
+    page_title="PlantPulse | Reliability Analytics",
+    page_icon="🏭",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
+# Industrial palette: light canvas, steel blue, and safety orange.
+PALETTE = ["#315A78", "#E87524", "#6D8798", "#D6A23A", "#4E8B76", "#A9B8C2"]
+CRITICALITY_COLORS = {
+    "Critical": "#C0392B",
+    "High": "#E87524",
+    "Medium": "#D6A23A",
+    "Low": "#4E8B76",
+}
+
+st.markdown(
+    """
+    <style>
+      .stApp { background: #F4F6F8; color: #202B35; }
+      [data-testid="stSidebar"] { background: #E9EEF2; }
+      .block-container { padding-top: 1.5rem; padding-bottom: 2.5rem; }
+      h1, h2, h3 { color: #203B50; }
+      div[data-testid="stMetric"] {
+        background: #FFFFFF; border: 1px solid #D9E1E7;
+        padding: 14px 16px; border-radius: 10px;
+      }
+      div[data-testid="stMetricLabel"] { color: #526777; }
+      div[data-testid="stMetricValue"] { color: #203B50; }
+      hr { border-color: #D9E1E7; }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+
+@st.cache_data
+def load_data():
+    """Load the bundled synthetic CSV data."""
+    required_files = {
+        "equipment": "equipment.csv",
+        "failures": "failure_events.csv",
+        "inspections": "inspections.csv",
+        "maintenance": "maintenance_records.csv",
+        "work_orders": "work_orders.csv",
+    }
+    loaded = {}
+    missing = []
+    for key, filename in required_files.items():
+        path = DATA / filename
+        if not path.exists():
+            missing.append(str(path))
+        else:
+            loaded[key] = pd.read_csv(path)
+
+    if missing:
+        raise FileNotFoundError(
+            "Could not find these data files:\n" + "\n".join(missing)
+        )
+
+    for frame_name, date_columns in {
+        "failures": ["failure_timestamp"],
+        "inspections": ["inspection_date"],
+        "maintenance": ["maintenance_date"],
+        "work_orders": ["created_date", "closed_date"],
+        "equipment": ["commissioned_date"],
+    }.items():
+        for column in date_columns:
+            if column in loaded[frame_name].columns:
+                loaded[frame_name][column] = pd.to_datetime(
+                    loaded[frame_name][column], errors="coerce"
+                )
+
+    for frame_name, numeric_columns in {
+        "failures": ["downtime_hours", "estimated_impact_cost"],
+        "maintenance": ["duration_hours", "maintenance_cost"],
+    }.items():
+        for column in numeric_columns:
+            if column in loaded[frame_name].columns:
+                loaded[frame_name][column] = pd.to_numeric(
+                    loaded[frame_name][column], errors="coerce"
+                ).fillna(0)
+
+    return loaded
+
+
+def style_chart(fig, height=360):
+    fig.update_layout(
+        height=height,
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(family="Arial, sans-serif", color="#34495E"),
+        title=dict(x=0.02, xanchor="left", font=dict(size=16, color="#203B50")),
+        margin=dict(l=12, r=12, t=60, b=12),
+        legend_title_text="",
+    )
+    fig.update_xaxes(showgrid=True, gridcolor="#E2E8ED", zeroline=False)
+    fig.update_yaxes(showgrid=False, zeroline=False)
+    return fig
+
+
+try:
+    data = load_data()
+except Exception as exc:
+    st.error("The dashboard could not load its CSV data.")
+    st.exception(exc)
+    st.stop()
+
+equipment = data["equipment"].copy()
+failures = data["failures"].copy()
+inspections = data["inspections"].copy()
+maintenance = data["maintenance"].copy()
+work_orders = data["work_orders"].copy()
+
+# Normalize text fields to avoid filter mismatches caused by whitespace.
+for frame, columns in [
+    (equipment, ["plant_area", "criticality", "equipment_type", "equipment_name"]),
+    (failures, ["failure_type", "severity"]),
+    (maintenance, ["maintenance_type"]),
+    (inspections, ["condition_rating"]),
+    (work_orders, ["priority", "status"]),
+]:
+    for column in columns:
+        if column in frame.columns:
+            frame[column] = frame[column].fillna("Unknown").astype(str).str.strip()
+
+# ---------------------------- Header ----------------------------
+st.title("🏭 PlantPulse")
+st.caption(
+    "Industrial Reliability & Maintenance Analytics  |  "
+    "Explore synthetic failure, downtime, inspection, and maintenance records."
+)
+st.warning(
+    "Demo limitation: all bundled records are synthetic. "
+    "Costs are illustrative, and recorded downtime is not equipment availability."
+)
+
+# ---------------------------- Sidebar filters ----------------------------
+st.sidebar.title("Dashboard filters")
+st.sidebar.caption("Choose the records included in the dashboard.")
+
+areas = sorted(equipment["plant_area"].dropna().unique().tolist())
+criticalities = sorted(equipment["criticality"].dropna().unique().tolist())
+equipment_types = sorted(equipment["equipment_type"].dropna().unique().tolist())
+
+selected_areas = st.sidebar.multiselect("Plant area", areas, default=areas)
+selected_criticalities = st.sidebar.multiselect(
+    "Equipment criticality", criticalities, default=criticalities
+)
+selected_types = st.sidebar.multiselect(
+    "Equipment type", equipment_types, default=equipment_types
+)
+
+date_min = failures["failure_timestamp"].min()
+date_max = failures["failure_timestamp"].max()
+if pd.isna(date_min) or pd.isna(date_max):
+    selected_dates = None
+    st.sidebar.info("Failure timestamps are unavailable; date filtering is disabled.")
+else:
+    selected_dates = st.sidebar.date_input(
+        "Failure date range",
+        value=(date_min.date(), date_max.date()),
+        min_value=date_min.date(),
+        max_value=date_max.date(),
+    )
+
+filtered_equipment = equipment[
+    equipment["plant_area"].isin(selected_areas)
+    & equipment["criticality"].isin(selected_criticalities)
+    & equipment["equipment_type"].isin(selected_types)
+].copy()
+
+selected_ids = filtered_equipment["equipment_id"].tolist()
+
+f = failures[failures["equipment_id"].isin(selected_ids)].copy()
+m = maintenance[maintenance["equipment_id"].isin(selected_ids)].copy()
+i = inspections[inspections["equipment_id"].isin(selected_ids)].copy()
+w = work_orders[work_orders["equipment_id"].isin(selected_ids)].copy()
+
+if selected_dates and isinstance(selected_dates, (tuple, list)) and len(selected_dates) == 2:
+    start_date, end_date = selected_dates
+    f = f[
+        f["failure_timestamp"].dt.date.between(start_date, end_date)
+    ].copy()
+
+# ---------------------------- KPI cards ----------------------------
+total_equipment = len(filtered_equipment)
+failure_count = len(f)
+recorded_downtime = float(f["downtime_hours"].sum()) if not f.empty else 0.0
+maintenance_spend = float(m["maintenance_cost"].sum()) if not m.empty else 0.0
+open_orders_count = int(
+    w["status"].isin(["Open", "In Progress", "On Hold"]).sum()
+) if not w.empty else 0
+
+k1, k2, k3, k4, k5 = st.columns(5)
+k1.metric("Equipment in scope", f"{total_equipment:,}")
+k2.metric("Recorded failure events", f"{failure_count:,}")
+k3.metric("Recorded downtime", f"{recorded_downtime:,.1f} h")
+k4.metric("Recorded maintenance spend", f"₹{maintenance_spend:,.0f}")
+k5.metric("Active work orders", f"{open_orders_count:,}")
+
+st.divider()
+
+# ---------------------------- Trends and failure patterns ----------------------------
+left, right = st.columns(2, gap="large")
+
+with left:
+    st.markdown("### 📈 Monthly recorded failures")
+    if f.empty:
+        st.info("No failure records match these filters.")
+    else:
+        monthly = (
+            f.assign(month=f["failure_timestamp"].dt.to_period("M").dt.to_timestamp())
+            .groupby("month", as_index=False)
+            .agg(failure_events=("failure_id", "count"))
+            .sort_values("month")
+        )
+        fig = px.line(
+            monthly,
+            x="month",
+            y="failure_events",
+            markers=True,
+            title="Failure events by month",
+            labels={"month": "Month", "failure_events": "Recorded events"},
+            color_discrete_sequence=[PALETTE[0]],
+        )
+        st.plotly_chart(style_chart(fig, 360), use_container_width=True)
+
+with right:
+    st.markdown("### 🧰 Most frequent failure types")
+    if f.empty:
+        st.info("No failure records match these filters.")
+    else:
+        failure_types = (
+            f.groupby("failure_type", as_index=False)
+            .agg(events=("failure_id", "count"))
+            .sort_values("events", ascending=False)
+            .head(10)
+        )
+        fig = px.bar(
+            failure_types,
+            x="events",
+            y="failure_type",
+            orientation="h",
+            title="Top failure types by event count",
+            labels={"events": "Recorded events", "failure_type": "Failure type"},
+            color_discrete_sequence=[PALETTE[1]],
+        )
+        fig.update_layout(yaxis={"categoryorder": "total ascending"})
+        st.plotly_chart(style_chart(fig, 360), use_container_width=True)
+
+st.divider()
+
+# ---------------------------- Downtime and maintenance spend ----------------------------
+left, right = st.columns(2, gap="large")
+
+with left:
+    st.markdown("### ⏱️ Top 10 equipment by downtime")
+    if f.empty or filtered_equipment.empty:
+        st.info("No failure records match these filters.")
+    else:
+        top_downtime = (
+            f.groupby("equipment_id", as_index=False)
+            .agg(downtime_hours=("downtime_hours", "sum"))
+            .merge(
+                filtered_equipment[
+                    ["equipment_id", "equipment_name", "criticality"]
+                ],
+                on="equipment_id",
+                how="left",
+            )
+            .sort_values("downtime_hours", ascending=False)
+            .head(10)
+        )
+        fig = px.bar(
+            top_downtime,
+            x="downtime_hours",
+            y="equipment_name",
+            orientation="h",
+            color="criticality",
+            color_discrete_map=CRITICALITY_COLORS,
+            hover_data={
+                "downtime_hours": ":.1f",
+                "equipment_name": True,
+                "criticality": True,
+            },
+            title="Top 10 equipment by recorded downtime",
+            labels={
                 "downtime_hours": "Downtime (hours)",
                 "equipment_name": "Equipment",
                 "criticality": "Criticality",
             },
-            title="Top 10 equipment by recorded downtime",
         )
         fig.update_layout(yaxis={"categoryorder": "total ascending"})
-        fig = style_chart(fig, height=380)
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(style_chart(fig, 380), use_container_width=True)
 
 with right:
     st.markdown("### 💰 Maintenance spend by type")
@@ -34,12 +332,12 @@ with right:
             textinfo="percent",
             marker=dict(line=dict(color="#FFFFFF", width=2)),
         )
-        fig = style_chart(fig, height=380)
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(style_chart(fig, 380), use_container_width=True)
 
 st.divider()
-st.markdown("### 🔎 Latest inspection conditions")
 
+# ---------------------------- Latest inspection conditions ----------------------------
+st.markdown("### 🔎 Latest inspection conditions")
 if i.empty:
     st.info("No inspection records match these filters.")
 else:
@@ -81,6 +379,7 @@ else:
         hide_index=True,
     )
 
+# ---------------------------- High-priority active work orders ----------------------------
 st.markdown("### 🚨 High-priority open work orders")
 active = w[
     (w["status"].isin(["Open", "In Progress", "On Hold"]))
@@ -96,6 +395,11 @@ active = w[
 if active.empty:
     st.success("No high-priority active work orders match the current scope.")
 else:
+    priority_order = {"Urgent": 0, "High": 1}
+    active["_priority_order"] = active["priority"].map(priority_order).fillna(2)
+    active = active.sort_values(
+        ["_priority_order", "created_date"], ascending=[True, True]
+    )
     st.dataframe(
         active[
             [
@@ -108,11 +412,12 @@ else:
                 "created_date",
                 "description",
             ]
-        ].sort_values(["priority", "created_date"], ascending=[True, True]),
+        ],
         use_container_width=True,
         hide_index=True,
     )
 
+# ---------------------------- Download and notes ----------------------------
 st.download_button(
     "⬇️ Download filtered failure events (CSV)",
     data=f.to_csv(index=False).encode("utf-8"),
@@ -125,4 +430,10 @@ with st.expander("How to interpret this dashboard"):
         """
         - Counts and totals describe only the synthetic records included in this demo.
         - Recorded downtime is not equivalent to equipment availability unless operating-time exposure is known.
-        - The estimated impact cost is illustrative synthetic data, not measured financial loss.
+        - Estimated impact cost is illustrative synthetic data, not measured financial loss.
+        - Criticality is a supplied category, not a model-generated risk score.
+        - Use the dashboard to explore records, not to make operational maintenance decisions.
+        """
+    )
+
+st.caption("PlantPulse · Portfolio demonstration · Synthetic data only")
