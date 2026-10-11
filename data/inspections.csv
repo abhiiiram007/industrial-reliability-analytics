@@ -1,0 +1,151 @@
+inspection_id,equipment_id,inspection_date,condition_rating,finding
+1,EQ021,2025-06-05,Poor,Leakage signs detected
+2,EQ022,2026-03-30,Poor,No abnormality observed
+3,EQ029,2025-04-13,Good,No abnormality observed
+4,EQ019,2026-01-29,Good,Temperature trend requires monitoring
+5,EQ011,2025-05-24,Good,Guarding or alignment issue
+6,EQ003,2025-09-12,Monitor,Leakage signs detected
+7,EQ024,2026-09-15,Good,Guarding or alignment issue
+8,EQ001,2025-11-05,Good,Leakage signs detected
+9,EQ017,2025-07-13,Monitor,Surface corrosion observed
+10,EQ021,2025-02-25,Poor,Elevated vibration
+11,EQ016,2026-01-31,Good,Temperature trend requires monitoring
+12,EQ021,2026-09-01,Good,No abnormality observed
+13,EQ012,2025-11-21,Good,Leakage signs detected
+14,EQ014,2026-01-10,Monitor,Elevated vibration
+15,EQ025,2026-04-28,Critical,No abnormality observed
+16,EQ001,2026-08-25,Good,Surface corrosion observed
+17,EQ007,2025-02-10,Poor,Temperature trend requires monitoring
+18,EQ017,2025-10-21,Monitor,Leakage signs detected
+19,EQ025,2026-03-02,Good,Temperature trend requires monitoring
+20,EQ003,2026-07-04,Monitor,Elevated vibration
+21,EQ009,2025-03-27,Good,Leakage signs detected
+22,EQ030,2025-07-28,Critical,Elevated vibration
+23,EQ018,2025-12-01,Good,Guarding or alignment issue
+24,EQ025,2025-03-09,Good,Temperature trend requires monitoring
+25,EQ024,2025-09-02,Good,No abnormality observed
+26,EQ030,2026-03-21,Good,Leakage signs detected
+27,EQ020,2025-02-26,Good,Guarding or alignment issue
+28,EQ022,2025-06-29,Good,Guarding or alignment issue
+29,EQ005,2025-01-12,Good,Surface corrosion observed
+30,EQ017,2026-06-14,Poor,Guarding or alignment issue
+31,EQ009,2025-06-20,Good,Guarding or alignment issue
+32,EQ025,2025-10-03,Monitor,No abnormality observed
+33,EQ025,2025-01-31,Good,Temperature trend requires monitoring
+34,EQ009,2026-06-21,Good,Guarding or alignment issue
+35,EQ019,2025-03-20,Monitor,Leakage signs detected
+36,EQ012,2025-02-26,Monitor,Leakage signs detected
+37,EQ006,2026-01-12,Good,No abnormality observed
+38,EQ029,2026-08-11,Monitor,No abnormality observed
+39,EQ008,2026-06-06,Good,No abnormality observed
+40,EQ008,2025-02-17,Monitor,Temperature trend requires monitoring
+41,EQ030,2025-06-03,Good,No abnormality observed
+42,EQ018,2026-03-06,Good,Elevated vibration
+43,EQ014,2025-11-24,Good,No abnormality observed
+44,EQ019,2026-01-17,Good,Guarding or alignment issue
+45,EQ029,2025-02-23,Good,Leakage signs detected
+46,EQ002,2026-02-15,Good,Temperature trend requires monitoring
+47,EQ028,2025-10-17,Poor,Surface corrosion observed
+48,EQ011,2025-03-30,Monitor,No abnormality observed
+49,EQ012,2025-07-25,Good,Surface corrosion observed
+50,EQ024,2026-09-30,Good,Surface corrosion observed
+51,EQ019,2026-05-21,Critical,Elevated vibration
+52,EQ024,2026-07-14,Poor,Elevated vibration
+53,EQ005,2025-01-07,Poor,No abnormality observed
+54,EQ008,2026-07-09,Good,Guarding or alignment issue
+55,EQ029,2025-01-10,Critical,No abnormality observed
+56,EQ025,2026-01-21,Poor,Guarding or alignment issue
+57,EQ010,2025-04-17,Good,Elevated vibration
+58,EQ014,2026-05-19,Critical,Elevated vibration
+59,EQ023,2025-10-14,Good,Elevated vibration
+60,EQ029,2026-06-17,Good,Surface corrosion observed
+61,EQ015,2025-03-28,Monitor,Leakage signs detected
+62,EQ005,2026-02-08,Good,Leakage signs detected
+63,EQ002,2026-03-22,Monitor,Elevated vibration
+64,EQ008,2025-10-26,Good,Surface corrosion observed
+65,EQ030,2026-02-07,Monitor,Guarding or alignment issue
+66,EQ011,2025-11-22,Monitor,Elevated vibration
+67,EQ003,2025-07-27,Good,Leakage signs detected
+68,EQ004,2025-06-09,Good,Temperature trend requires monitoring
+69,EQ015,2025-11-18,Good,Leakage signs detected
+70,EQ012,2025-08-01,Monitor,Temperature trend requires monitoring
+71,EQ009,2025-05-03,Good,Guarding or alignment issue
+72,EQ010,2026-09-10,Good,Surface corrosion observed
+73,EQ005,2025-04-04,Monitor,Surface corrosion observed
+74,EQ013,2026-06-10,Good,Surface corrosion observed
+75,EQ009,2025-06-28,Good,Temperature trend requires monitoring
+76,EQ028,2026-04-09,Monitor,Leakage signs detected
+77,EQ008,2025-04-07,Monitor,Elevated vibration
+78,EQ004,2025-01-13,Good,Elevated vibration
+79,EQ005,2025-07-22,Poor,Surface corrosion observed
+80,EQ022,2025-03-28,Monitor,Surface corrosion observed
+81,EQ030,2025-03-18,Good,No abnormality observed
+82,EQ007,2026-03-31,Poor,No abnormality observed
+83,EQ029,2025-12-06,Good,Temperature trend requires monitoring
+84,EQ002,2025-06-22,Poor,Temperature trend requires monitoring
+85,EQ027,2026-02-09,Monitor,Temperature trend requires monitoring
+86,EQ022,2026-03-13,Good,Elevated vibration
+87,EQ030,2025-07-11,Good,Temperature trend requires monitoring
+88,EQ029,2025-06-02,Good,Leakage signs detected
+89,EQ020,2025-09-09,Monitor,Temperature trend requires monitoring
+90,EQ014,2026-07-18,Monitor,No abnormality observed
+91,EQ009,2026-01-28,Good,Elevated vibration
+92,EQ021,2026-06-23,Good,Leakage signs detected
+93,EQ026,2025-01-20,Critical,Guarding or alignment issue
+94,EQ012,2026-05-07,Monitor,Temperature trend requires monitoring
+95,EQ012,2026-08-03,Monitor,Temperature trend requires monitoring
+96,EQ009,2025-07-04,Good,Leakage signs detected
+97,EQ008,2025-01-31,Poor,Surface corrosion observed
+98,EQ002,2026-04-29,Monitor,Leakage signs detected
+99,EQ008,2025-06-13,Good,Guarding or alignment issue
+100,EQ008,2025-09-30,Monitor,Guarding or alignment issue
+101,EQ002,2025-08-13,Monitor,Temperature trend requires monitoring
+102,EQ012,2025-06-27,Good,Leakage signs detected
+103,EQ011,2026-01-03,Poor,No abnormality observed
+104,EQ023,2025-12-27,Poor,Leakage signs detected
+105,EQ005,2026-07-31,Poor,Temperature trend requires monitoring
+106,EQ018,2025-11-13,Good,No abnormality observed
+107,EQ003,2025-02-27,Good,Elevated vibration
+108,EQ001,2026-06-24,Monitor,Surface corrosion observed
+109,EQ030,2026-09-21,Good,Elevated vibration
+110,EQ011,2025-07-01,Poor,Surface corrosion observed
+111,EQ002,2025-01-23,Good,Guarding or alignment issue
+112,EQ030,2025-05-26,Poor,Leakage signs detected
+113,EQ028,2026-01-09,Critical,Surface corrosion observed
+114,EQ023,2026-02-10,Monitor,Surface corrosion observed
+115,EQ010,2025-11-27,Good,Elevated vibration
+116,EQ024,2026-03-24,Poor,Temperature trend requires monitoring
+117,EQ021,2025-11-21,Good,Leakage signs detected
+118,EQ023,2026-09-21,Poor,Elevated vibration
+119,EQ022,2026-08-27,Poor,Temperature trend requires monitoring
+120,EQ010,2025-10-29,Good,Guarding or alignment issue
+121,EQ001,2026-08-10,Good,Leakage signs detected
+122,EQ002,2025-07-06,Monitor,Leakage signs detected
+123,EQ008,2026-08-03,Good,Temperature trend requires monitoring
+124,EQ005,2025-12-06,Monitor,Elevated vibration
+125,EQ012,2025-11-24,Good,No abnormality observed
+126,EQ027,2025-12-10,Good,Surface corrosion observed
+127,EQ007,2025-09-13,Monitor,Surface corrosion observed
+128,EQ009,2025-04-21,Monitor,No abnormality observed
+129,EQ013,2026-03-25,Monitor,Elevated vibration
+130,EQ029,2026-02-28,Monitor,Temperature trend requires monitoring
+131,EQ012,2026-07-14,Good,Temperature trend requires monitoring
+132,EQ026,2026-08-15,Monitor,Guarding or alignment issue
+133,EQ008,2025-06-16,Monitor,No abnormality observed
+134,EQ010,2025-01-21,Good,No abnormality observed
+135,EQ003,2025-12-17,Good,Temperature trend requires monitoring
+136,EQ006,2025-03-18,Monitor,No abnormality observed
+137,EQ011,2026-09-01,Critical,Temperature trend requires monitoring
+138,EQ023,2025-02-01,Good,Guarding or alignment issue
+139,EQ006,2026-09-14,Poor,Elevated vibration
+140,EQ002,2025-04-14,Good,Elevated vibration
+141,EQ014,2026-07-22,Monitor,Guarding or alignment issue
+142,EQ018,2025-09-29,Monitor,Surface corrosion observed
+143,EQ008,2025-04-09,Good,Leakage signs detected
+144,EQ018,2026-05-18,Good,Surface corrosion observed
+145,EQ001,2026-03-14,Good,Guarding or alignment issue
+146,EQ021,2026-09-07,Monitor,No abnormality observed
+147,EQ001,2025-07-31,Good,Surface corrosion observed
+148,EQ003,2026-04-30,Poor,Surface corrosion observed
+149,EQ026,2026-02-12,Monitor,Guarding or alignment issue
+150,EQ009,2025-04-04,Monitor,Temperature trend requires monitoring

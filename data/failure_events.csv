@@ -1,0 +1,181 @@
+failure_id,equipment_id,failure_timestamp,failure_type,severity,downtime_hours,estimated_impact_cost,failure_description
+1,EQ025,2025-06-15 17:00:00,Bearing Failure,Critical,49.88,38851.12,Leakage observed during routine inspection
+2,EQ001,2025-04-25 11:00:00,Overheating,High,25.03,10047.67,Unexpected shutdown reported by operator
+3,EQ029,2026-08-04 02:00:00,Bearing Failure,Low,14.84,17464.95,Reduced throughput and abnormal operating noise
+4,EQ025,2025-05-09 04:00:00,Seal Leakage,Medium,28.43,12176.84,Reduced throughput and abnormal operating noise
+5,EQ014,2025-08-05 17:00:00,Electrical Fault,High,20.85,9951.75,Electrical trip caused equipment stoppage
+6,EQ021,2026-01-18 14:00:00,Seal Leakage,High,13.82,5333.58,Temperature exceeded normal operating range
+7,EQ001,2026-08-26 17:00:00,Bearing Failure,Low,7.0,6252.63,Abnormal vibration detected during operation
+8,EQ008,2025-03-11 01:00:00,Seal Leakage,High,2.59,1145.82,Leakage observed during routine inspection
+9,EQ007,2026-07-07 04:00:00,Corrosion,High,26.53,17146.46,Leakage observed during routine inspection
+10,EQ026,2026-02-21 06:00:00,Overheating,Low,19.94,11859.47,Leakage observed during routine inspection
+11,EQ028,2025-02-25 21:00:00,Bearing Failure,Medium,19.56,11203.04,Temperature exceeded normal operating range
+12,EQ026,2025-04-22 07:00:00,Seal Leakage,Low,16.32,9677.36,Temperature exceeded normal operating range
+13,EQ015,2025-09-13 02:00:00,Corrosion,Medium,25.91,6550.16,Electrical trip caused equipment stoppage
+14,EQ018,2025-01-16 02:00:00,Seal Leakage,Critical,45.97,26512.5,Leakage observed during routine inspection
+15,EQ007,2026-02-15 01:00:00,Vibration,Low,0.56,239.94,Leakage observed during routine inspection
+16,EQ010,2026-03-10 22:00:00,Corrosion,Critical,53.76,45425.31,Leakage observed during routine inspection
+17,EQ005,2025-07-14 09:00:00,Electrical Fault,Low,2.23,1604.05,Electrical trip caused equipment stoppage
+18,EQ011,2025-02-28 01:00:00,Blockage,Medium,15.33,10848.77,Abnormal vibration detected during operation
+19,EQ017,2025-03-24 05:00:00,Blockage,Low,2.5,992.41,Abnormal vibration detected during operation
+20,EQ029,2026-08-07 07:00:00,Bearing Failure,Medium,1.67,985.61,Reduced throughput and abnormal operating noise
+21,EQ019,2026-06-20 10:00:00,Electrical Fault,Critical,11.75,5638.74,Temperature exceeded normal operating range
+22,EQ013,2025-05-15 21:00:00,Blockage,Medium,13.99,15843.97,Abnormal vibration detected during operation
+23,EQ015,2026-09-29 18:00:00,Seal Leakage,Critical,4.79,3262.85,Unexpected shutdown reported by operator
+24,EQ030,2025-12-24 02:00:00,Seal Leakage,High,11.4,6955.07,Reduced throughput and abnormal operating noise
+25,EQ023,2025-11-06 19:00:00,Corrosion,Critical,43.76,6923.46,Reduced throughput and abnormal operating noise
+26,EQ010,2025-04-17 04:00:00,Electrical Fault,Low,26.75,19551.17,Temperature exceeded normal operating range
+27,EQ010,2026-09-12 06:00:00,Electrical Fault,High,6.51,6806.59,Reduced throughput and abnormal operating noise
+28,EQ016,2025-09-15 01:00:00,Overheating,Low,13.0,2551.78,Temperature exceeded normal operating range
+29,EQ025,2025-05-14 20:00:00,Vibration,Critical,9.48,6913.43,Leakage observed during routine inspection
+30,EQ018,2025-01-10 03:00:00,Seal Leakage,Low,26.55,19192.19,Temperature exceeded normal operating range
+31,EQ019,2026-07-20 04:00:00,Overheating,Medium,1.73,1892.5,Abnormal vibration detected during operation
+32,EQ029,2026-01-02 06:00:00,Overheating,Medium,20.17,19547.19,Leakage observed during routine inspection
+33,EQ020,2025-06-08 07:00:00,Blockage,High,29.3,9842.02,Leakage observed during routine inspection
+34,EQ001,2025-07-03 23:00:00,Vibration,Critical,42.44,42115.2,Electrical trip caused equipment stoppage
+35,EQ026,2025-09-12 08:00:00,Vibration,Low,21.19,22583.77,Leakage observed during routine inspection
+36,EQ008,2025-07-24 14:00:00,Blockage,Low,24.71,9611.58,Abnormal vibration detected during operation
+37,EQ022,2025-07-17 12:00:00,Blockage,Low,26.0,11520.11,Electrical trip caused equipment stoppage
+38,EQ017,2026-02-14 21:00:00,Bearing Failure,Critical,29.37,7962.47,Temperature exceeded normal operating range
+39,EQ006,2026-08-18 08:00:00,Overheating,Low,18.1,16561.0,Temperature exceeded normal operating range
+40,EQ014,2026-09-13 16:00:00,Seal Leakage,Low,27.04,11288.08,Electrical trip caused equipment stoppage
+41,EQ014,2025-01-02 16:00:00,Electrical Fault,Critical,29.49,33538.28,Electrical trip caused equipment stoppage
+42,EQ022,2025-07-21 11:00:00,Overheating,Medium,28.49,22914.88,Electrical trip caused equipment stoppage
+43,EQ028,2025-05-08 23:00:00,Electrical Fault,High,15.46,8948.44,Leakage observed during routine inspection
+44,EQ023,2025-10-30 17:00:00,Vibration,Low,12.9,11109.27,Unexpected shutdown reported by operator
+45,EQ020,2026-08-06 09:00:00,Overheating,Medium,25.09,11322.1,Leakage observed during routine inspection
+46,EQ026,2026-08-17 19:00:00,Vibration,Medium,14.22,12220.79,Reduced throughput and abnormal operating noise
+47,EQ016,2025-06-23 21:00:00,Electrical Fault,Low,15.71,12571.52,Abnormal vibration detected during operation
+48,EQ027,2025-08-29 21:00:00,Seal Leakage,Low,24.29,4266.46,Unexpected shutdown reported by operator
+49,EQ016,2026-09-18 02:00:00,Corrosion,Medium,26.64,9434.74,Electrical trip caused equipment stoppage
+50,EQ013,2026-05-22 12:00:00,Bearing Failure,Low,19.85,21582.76,Abnormal vibration detected during operation
+51,EQ025,2026-03-12 07:00:00,Corrosion,Low,28.76,18342.48,Reduced throughput and abnormal operating noise
+52,EQ008,2025-05-05 14:00:00,Corrosion,Low,14.21,16871.35,Reduced throughput and abnormal operating noise
+53,EQ011,2026-03-30 19:00:00,Vibration,High,26.81,27402.44,Reduced throughput and abnormal operating noise
+54,EQ015,2025-06-12 23:00:00,Blockage,High,13.78,5644.31,Electrical trip caused equipment stoppage
+55,EQ009,2026-06-18 15:00:00,Bearing Failure,Medium,8.6,7733.31,Unexpected shutdown reported by operator
+56,EQ009,2025-12-10 10:00:00,Seal Leakage,High,2.88,1131.33,Electrical trip caused equipment stoppage
+57,EQ005,2025-08-08 02:00:00,Vibration,Medium,10.26,6018.14,Unexpected shutdown reported by operator
+58,EQ027,2026-03-07 12:00:00,Electrical Fault,High,17.73,3023.12,Reduced throughput and abnormal operating noise
+59,EQ013,2026-05-04 00:00:00,Vibration,Critical,16.76,17532.98,Leakage observed during routine inspection
+60,EQ018,2026-07-14 19:00:00,Overheating,High,14.9,9053.65,Abnormal vibration detected during operation
+61,EQ013,2025-12-11 21:00:00,Seal Leakage,Medium,12.43,12834.36,Unexpected shutdown reported by operator
+62,EQ020,2026-07-01 00:00:00,Electrical Fault,High,17.96,3205.09,Electrical trip caused equipment stoppage
+63,EQ014,2025-05-19 14:00:00,Overheating,Low,8.17,3041.23,Temperature exceeded normal operating range
+64,EQ011,2026-01-24 08:00:00,Overheating,High,25.04,25707.48,Leakage observed during routine inspection
+65,EQ001,2026-07-07 01:00:00,Electrical Fault,Critical,19.48,4325.52,Electrical trip caused equipment stoppage
+66,EQ002,2025-02-01 07:00:00,Seal Leakage,Low,1.1,440.52,Leakage observed during routine inspection
+67,EQ022,2025-04-28 18:00:00,Overheating,Critical,25.59,24444.67,Unexpected shutdown reported by operator
+68,EQ020,2026-09-14 23:00:00,Seal Leakage,High,23.44,27259.71,Abnormal vibration detected during operation
+69,EQ019,2025-01-27 09:00:00,Vibration,Medium,27.29,15459.43,Electrical trip caused equipment stoppage
+70,EQ007,2025-03-19 18:00:00,Bearing Failure,Medium,19.0,16759.0,Temperature exceeded normal operating range
+71,EQ028,2026-09-07 03:00:00,Bearing Failure,High,17.2,8850.5,Leakage observed during routine inspection
+72,EQ022,2026-01-15 02:00:00,Blockage,Medium,10.57,6247.52,Leakage observed during routine inspection
+73,EQ004,2026-03-20 11:00:00,Electrical Fault,Medium,24.95,7750.49,Unexpected shutdown reported by operator
+74,EQ024,2026-06-19 20:00:00,Corrosion,Low,24.34,23448.51,Leakage observed during routine inspection
+75,EQ014,2026-08-30 08:00:00,Bearing Failure,Low,7.74,3427.85,Leakage observed during routine inspection
+76,EQ008,2026-04-21 18:00:00,Bearing Failure,Medium,11.68,7814.17,Temperature exceeded normal operating range
+77,EQ006,2026-05-15 06:00:00,Overheating,Medium,8.12,8723.61,Electrical trip caused equipment stoppage
+78,EQ029,2025-10-10 17:00:00,Bearing Failure,Low,28.47,11485.48,Leakage observed during routine inspection
+79,EQ016,2026-07-23 07:00:00,Vibration,Medium,19.55,12132.4,Abnormal vibration detected during operation
+80,EQ003,2025-10-29 07:00:00,Electrical Fault,Medium,7.68,5841.66,Leakage observed during routine inspection
+81,EQ018,2026-06-28 11:00:00,Overheating,Medium,22.51,11691.72,Leakage observed during routine inspection
+82,EQ009,2025-11-10 08:00:00,Overheating,Low,21.78,6001.1,Reduced throughput and abnormal operating noise
+83,EQ025,2025-07-09 06:00:00,Electrical Fault,Low,14.78,11366.8,Reduced throughput and abnormal operating noise
+84,EQ020,2025-10-17 03:00:00,Overheating,High,9.24,3126.94,Abnormal vibration detected during operation
+85,EQ023,2026-07-01 04:00:00,Corrosion,Low,29.24,13355.18,Unexpected shutdown reported by operator
+86,EQ021,2026-05-18 03:00:00,Vibration,High,17.43,11375.69,Temperature exceeded normal operating range
+87,EQ006,2025-02-22 08:00:00,Blockage,Critical,26.27,5742.9,Leakage observed during routine inspection
+88,EQ003,2026-08-14 20:00:00,Blockage,Medium,4.98,3690.09,Temperature exceeded normal operating range
+89,EQ003,2025-09-12 03:00:00,Corrosion,Medium,12.78,12527.95,Unexpected shutdown reported by operator
+90,EQ025,2026-06-20 12:00:00,Blockage,Medium,13.56,10413.42,Leakage observed during routine inspection
+91,EQ010,2026-08-06 19:00:00,Bearing Failure,Low,28.82,32998.03,Unexpected shutdown reported by operator
+92,EQ021,2025-08-05 08:00:00,Seal Leakage,Medium,5.13,3742.81,Unexpected shutdown reported by operator
+93,EQ001,2026-02-23 14:00:00,Bearing Failure,Medium,14.36,5644.2,Electrical trip caused equipment stoppage
+94,EQ010,2026-04-10 02:00:00,Blockage,Medium,27.76,27227.29,Reduced throughput and abnormal operating noise
+95,EQ022,2025-07-22 13:00:00,Seal Leakage,Low,7.13,7870.32,Unexpected shutdown reported by operator
+96,EQ003,2025-03-03 05:00:00,Blockage,High,18.05,13495.4,Temperature exceeded normal operating range
+97,EQ015,2025-05-08 14:00:00,Overheating,Medium,21.14,14279.98,Leakage observed during routine inspection
+98,EQ015,2025-03-24 19:00:00,Overheating,Low,13.24,10378.83,Abnormal vibration detected during operation
+99,EQ003,2025-08-23 21:00:00,Bearing Failure,High,17.47,20956.16,Electrical trip caused equipment stoppage
+100,EQ027,2025-10-03 18:00:00,Vibration,Low,22.81,15850.94,Leakage observed during routine inspection
+101,EQ030,2025-10-12 05:00:00,Blockage,Critical,24.05,16024.81,Abnormal vibration detected during operation
+102,EQ016,2025-12-23 13:00:00,Blockage,Low,20.27,6463.42,Leakage observed during routine inspection
+103,EQ023,2026-05-23 09:00:00,Blockage,Medium,12.31,8956.77,Leakage observed during routine inspection
+104,EQ003,2025-11-19 08:00:00,Vibration,Low,29.12,30813.51,Abnormal vibration detected during operation
+105,EQ022,2026-07-10 14:00:00,Overheating,Medium,6.03,4846.71,Leakage observed during routine inspection
+106,EQ021,2026-03-29 01:00:00,Overheating,Low,16.7,10187.37,Electrical trip caused equipment stoppage
+107,EQ016,2025-05-05 00:00:00,Seal Leakage,Critical,33.23,29749.89,Temperature exceeded normal operating range
+108,EQ018,2025-01-15 17:00:00,Blockage,Medium,7.13,7904.15,Leakage observed during routine inspection
+109,EQ004,2025-06-07 15:00:00,Electrical Fault,Critical,16.4,7168.38,Leakage observed during routine inspection
+110,EQ016,2025-09-07 14:00:00,Corrosion,Medium,11.82,8080.78,Unexpected shutdown reported by operator
+111,EQ028,2025-03-13 08:00:00,Overheating,High,25.71,29077.0,Reduced throughput and abnormal operating noise
+112,EQ009,2025-01-03 09:00:00,Corrosion,High,25.21,30222.94,Leakage observed during routine inspection
+113,EQ028,2025-06-02 14:00:00,Corrosion,Medium,10.68,10156.85,Leakage observed during routine inspection
+114,EQ015,2025-11-26 06:00:00,Vibration,Critical,13.58,5367.37,Leakage observed during routine inspection
+115,EQ002,2025-11-22 23:00:00,Vibration,Medium,27.45,15245.25,Electrical trip caused equipment stoppage
+116,EQ026,2025-06-05 15:00:00,Corrosion,Critical,7.6,3789.32,Abnormal vibration detected during operation
+117,EQ028,2026-03-27 03:00:00,Electrical Fault,Medium,13.98,4213.06,Electrical trip caused equipment stoppage
+118,EQ005,2025-03-18 15:00:00,Corrosion,High,8.32,7299.47,Electrical trip caused equipment stoppage
+119,EQ003,2025-12-03 21:00:00,Overheating,High,11.71,9463.31,Leakage observed during routine inspection
+120,EQ028,2026-07-09 01:00:00,Electrical Fault,Medium,7.43,8299.13,Unexpected shutdown reported by operator
+121,EQ024,2025-04-03 13:00:00,Electrical Fault,Critical,41.28,44013.07,Leakage observed during routine inspection
+122,EQ006,2025-11-03 00:00:00,Overheating,Low,23.99,12628.01,Leakage observed during routine inspection
+123,EQ005,2025-09-08 16:00:00,Seal Leakage,Medium,20.61,6770.03,Abnormal vibration detected during operation
+124,EQ020,2026-01-27 19:00:00,Corrosion,Medium,15.18,4558.15,Leakage observed during routine inspection
+125,EQ021,2025-09-18 14:00:00,Blockage,Low,0.78,498.04,Temperature exceeded normal operating range
+126,EQ022,2026-07-14 05:00:00,Corrosion,Low,28.38,13171.5,Leakage observed during routine inspection
+127,EQ023,2025-09-14 14:00:00,Vibration,High,6.38,6673.49,Abnormal vibration detected during operation
+128,EQ008,2026-01-26 18:00:00,Electrical Fault,Medium,9.23,4245.73,Electrical trip caused equipment stoppage
+129,EQ013,2025-10-09 00:00:00,Electrical Fault,Medium,20.73,24301.43,Reduced throughput and abnormal operating noise
+130,EQ024,2026-05-24 09:00:00,Blockage,High,7.29,3790.34,Electrical trip caused equipment stoppage
+131,EQ007,2026-09-28 08:00:00,Electrical Fault,Medium,21.77,18828.83,Unexpected shutdown reported by operator
+132,EQ021,2025-04-10 20:00:00,Vibration,Medium,9.61,1778.16,Temperature exceeded normal operating range
+133,EQ024,2025-05-15 02:00:00,Vibration,High,10.14,3391.04,Unexpected shutdown reported by operator
+134,EQ026,2026-07-07 11:00:00,Blockage,Medium,27.45,8860.08,Leakage observed during routine inspection
+135,EQ026,2025-10-30 23:00:00,Vibration,High,24.22,28120.34,Unexpected shutdown reported by operator
+136,EQ025,2025-08-20 21:00:00,Blockage,High,29.41,29257.57,Temperature exceeded normal operating range
+137,EQ003,2026-02-09 00:00:00,Overheating,Low,4.15,3554.35,Electrical trip caused equipment stoppage
+138,EQ009,2026-08-22 12:00:00,Bearing Failure,High,28.24,24246.25,Leakage observed during routine inspection
+139,EQ001,2026-09-27 17:00:00,Electrical Fault,Low,18.5,4002.99,Leakage observed during routine inspection
+140,EQ030,2025-11-06 20:00:00,Bearing Failure,Medium,4.62,2169.47,Leakage observed during routine inspection
+141,EQ004,2025-04-10 07:00:00,Vibration,High,4.5,2428.03,Electrical trip caused equipment stoppage
+142,EQ023,2026-07-08 13:00:00,Vibration,Medium,21.93,18370.06,Leakage observed during routine inspection
+143,EQ020,2026-02-22 08:00:00,Vibration,Low,11.43,7051.52,Unexpected shutdown reported by operator
+144,EQ028,2026-01-07 03:00:00,Electrical Fault,Critical,20.41,10748.06,Leakage observed during routine inspection
+145,EQ009,2025-07-14 03:00:00,Bearing Failure,Critical,44.66,37778.21,Electrical trip caused equipment stoppage
+146,EQ021,2026-09-04 00:00:00,Seal Leakage,Low,10.34,10095.22,Unexpected shutdown reported by operator
+147,EQ003,2026-07-22 06:00:00,Seal Leakage,Medium,24.49,12122.24,Unexpected shutdown reported by operator
+148,EQ026,2026-09-03 00:00:00,Seal Leakage,Low,29.53,21179.69,Unexpected shutdown reported by operator
+149,EQ004,2025-01-27 04:00:00,Seal Leakage,Low,23.8,18285.43,Abnormal vibration detected during operation
+150,EQ006,2025-09-29 01:00:00,Bearing Failure,Low,12.92,12053.7,Leakage observed during routine inspection
+151,EQ015,2026-01-06 16:00:00,Seal Leakage,Medium,13.83,15803.35,Abnormal vibration detected during operation
+152,EQ024,2026-06-18 09:00:00,Bearing Failure,Medium,28.94,34685.06,Leakage observed during routine inspection
+153,EQ014,2025-04-21 15:00:00,Bearing Failure,High,13.59,6634.87,Unexpected shutdown reported by operator
+154,EQ003,2025-05-10 08:00:00,Electrical Fault,Medium,17.77,8732.97,Reduced throughput and abnormal operating noise
+155,EQ017,2025-10-29 14:00:00,Blockage,Medium,13.19,11697.79,Electrical trip caused equipment stoppage
+156,EQ021,2026-07-19 23:00:00,Seal Leakage,High,13.19,7709.61,Leakage observed during routine inspection
+157,EQ013,2026-03-02 23:00:00,Electrical Fault,Low,13.09,5466.83,Unexpected shutdown reported by operator
+158,EQ022,2026-05-01 02:00:00,Vibration,Low,3.02,759.21,Electrical trip caused equipment stoppage
+159,EQ012,2025-05-14 17:00:00,Corrosion,Low,28.72,14248.8,Abnormal vibration detected during operation
+160,EQ014,2025-12-29 21:00:00,Electrical Fault,Critical,23.36,4765.87,Temperature exceeded normal operating range
+161,EQ020,2025-11-16 11:00:00,Seal Leakage,Low,15.47,12988.2,Unexpected shutdown reported by operator
+162,EQ028,2025-04-21 11:00:00,Blockage,High,11.34,5017.91,Unexpected shutdown reported by operator
+163,EQ026,2026-03-16 17:00:00,Corrosion,Critical,44.36,38093.07,Reduced throughput and abnormal operating noise
+164,EQ001,2026-09-16 21:00:00,Seal Leakage,High,8.39,3665.88,Temperature exceeded normal operating range
+165,EQ030,2025-12-14 11:00:00,Corrosion,Low,26.16,21979.94,Abnormal vibration detected during operation
+166,EQ005,2025-02-01 02:00:00,Vibration,High,6.85,4290.35,Unexpected shutdown reported by operator
+167,EQ012,2025-11-16 23:00:00,Corrosion,Low,28.27,6762.32,Abnormal vibration detected during operation
+168,EQ005,2025-06-11 19:00:00,Vibration,Low,2.91,2459.05,Leakage observed during routine inspection
+169,EQ020,2026-03-29 13:00:00,Bearing Failure,Low,22.77,11668.07,Abnormal vibration detected during operation
+170,EQ010,2026-08-31 15:00:00,Seal Leakage,Medium,9.6,5424.26,Reduced throughput and abnormal operating noise
+171,EQ002,2025-01-08 06:00:00,Seal Leakage,Low,6.73,6409.44,Temperature exceeded normal operating range
+172,EQ011,2025-05-03 00:00:00,Seal Leakage,Medium,13.2,7249.68,Electrical trip caused equipment stoppage
+173,EQ008,2026-05-28 17:00:00,Bearing Failure,High,24.28,13764.93,Electrical trip caused equipment stoppage
+174,EQ002,2026-03-23 00:00:00,Overheating,Medium,2.8,2112.73,Reduced throughput and abnormal operating noise
+175,EQ013,2026-03-04 09:00:00,Overheating,Low,1.12,370.12,Reduced throughput and abnormal operating noise
+176,EQ015,2026-01-06 02:00:00,Vibration,Medium,3.62,2781.3,Reduced throughput and abnormal operating noise
+177,EQ003,2026-02-10 09:00:00,Blockage,High,7.04,2298.84,Reduced throughput and abnormal operating noise
+178,EQ021,2025-04-27 16:00:00,Overheating,Medium,27.22,14117.78,Electrical trip caused equipment stoppage
+179,EQ027,2025-06-01 07:00:00,Seal Leakage,Low,8.05,6299.28,Electrical trip caused equipment stoppage
+180,EQ003,2025-07-01 20:00:00,Blockage,Medium,22.76,17262.13,Electrical trip caused equipment stoppage

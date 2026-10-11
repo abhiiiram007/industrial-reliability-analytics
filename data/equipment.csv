@@ -1,0 +1,31 @@
+equipment_id,equipment_name,equipment_type,plant_area,criticality,commissioned_date,status
+EQ001,Cooling Fan 01,Cooling Fan,Utilities,Low,2020-02-01,Operational
+EQ002,Heat Exchanger 02,Heat Exchanger,Processing,Low,2024-08-03,Operational
+EQ003,Pressure Vessel 03,Pressure Vessel,Storage,Low,2017-05-03,Operational
+EQ004,Heat Exchanger 04,Heat Exchanger,Processing,Low,2023-04-18,Operational
+EQ005,Cooling Fan 05,Cooling Fan,Boiler House,Critical,2019-06-22,Under Review
+EQ006,Pressure Vessel 06,Pressure Vessel,Packaging,Low,2018-10-16,Under Review
+EQ007,Compressor 07,Compressor,Packaging,Medium,2019-06-01,Operational
+EQ008,Centrifugal Pump 08,Centrifugal Pump,Utilities,Critical,2018-02-01,Operational
+EQ009,Compressor 09,Compressor,Boiler House,High,2017-06-27,Under Review
+EQ010,Pressure Vessel 10,Pressure Vessel,Utilities,Critical,2017-11-19,Operational
+EQ011,Cooling Fan 11,Cooling Fan,Boiler House,High,2023-06-23,Operational
+EQ012,Cooling Fan 12,Cooling Fan,Utilities,Low,2024-06-01,Operational
+EQ013,Compressor 13,Compressor,Utilities,Medium,2018-02-18,Under Review
+EQ014,Compressor 14,Compressor,Storage,High,2018-10-29,Operational
+EQ015,Compressor 15,Compressor,Processing,High,2024-11-14,Operational
+EQ016,Pressure Vessel 16,Pressure Vessel,Processing,Medium,2018-11-01,Under Review
+EQ017,Conveyor Motor 17,Conveyor Motor,Packaging,Medium,2024-09-05,Operational
+EQ018,Centrifugal Pump 18,Centrifugal Pump,Processing,Low,2020-07-16,Under Review
+EQ019,Compressor 19,Compressor,Utilities,Medium,2023-05-13,Operational
+EQ020,Heat Exchanger 20,Heat Exchanger,Storage,Critical,2024-03-18,Under Review
+EQ021,Heat Exchanger 21,Heat Exchanger,Packaging,Medium,2019-10-08,Operational
+EQ022,Cooling Fan 22,Cooling Fan,Boiler House,Critical,2023-07-19,Under Review
+EQ023,Compressor 23,Compressor,Processing,Medium,2022-09-19,Under Review
+EQ024,Centrifugal Pump 24,Centrifugal Pump,Utilities,Low,2018-09-19,Operational
+EQ025,Cooling Fan 25,Cooling Fan,Storage,Low,2021-04-26,Under Review
+EQ026,Pressure Vessel 26,Pressure Vessel,Storage,High,2023-03-17,Operational
+EQ027,Cooling Fan 27,Cooling Fan,Utilities,High,2024-03-10,Operational
+EQ028,Centrifugal Pump 28,Centrifugal Pump,Packaging,Critical,2018-10-10,Under Review
+EQ029,Centrifugal Pump 29,Centrifugal Pump,Packaging,Medium,2022-09-11,Operational
+EQ030,Cooling Fan 30,Cooling Fan,Packaging,Medium,2018-09-19,Operational

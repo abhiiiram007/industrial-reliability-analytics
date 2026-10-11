@@ -1,0 +1,121 @@
+work_order_id,equipment_id,created_date,priority,status,closed_date,description
+1,EQ006,2026-01-15,High,On Hold,,Replace worn seal
+2,EQ015,2025-02-15,Urgent,Closed,2025-03-02,Inspect motor temperature
+3,EQ008,2025-10-03,Medium,Open,,Check pressure readings
+4,EQ022,2025-04-10,High,Open,,Perform preventive service
+5,EQ014,2026-08-27,Low,In Progress,,Resolve leakage issue
+6,EQ027,2026-06-20,Urgent,On Hold,,Perform preventive service
+7,EQ029,2025-08-30,High,On Hold,,Investigate repeated vibration
+8,EQ013,2025-02-05,Low,In Progress,,Resolve leakage issue
+9,EQ006,2025-06-21,Medium,In Progress,,Replace worn seal
+10,EQ002,2026-03-10,Urgent,Open,,Replace worn seal
+11,EQ027,2025-06-01,High,Closed,2025-06-04,Investigate repeated vibration
+12,EQ013,2026-07-24,High,On Hold,,Inspect motor temperature
+13,EQ017,2026-04-15,Urgent,Open,,Investigate repeated vibration
+14,EQ014,2025-06-03,Low,In Progress,,Investigate repeated vibration
+15,EQ019,2025-04-14,High,Closed,2025-04-28,Inspect motor temperature
+16,EQ013,2026-05-13,Low,On Hold,,Replace worn seal
+17,EQ009,2026-02-17,Urgent,In Progress,,Investigate repeated vibration
+18,EQ013,2025-12-06,Low,In Progress,,Check pressure readings
+19,EQ016,2025-10-03,Low,Closed,2025-10-14,Inspect motor temperature
+20,EQ010,2025-10-15,Low,On Hold,,Replace worn seal
+21,EQ005,2025-11-04,High,On Hold,,Inspect motor temperature
+22,EQ024,2026-03-03,Medium,Open,,Resolve leakage issue
+23,EQ007,2026-02-21,High,On Hold,,Investigate repeated vibration
+24,EQ017,2025-06-12,High,Open,,Check pressure readings
+25,EQ017,2026-02-18,Low,In Progress,,Replace worn seal
+26,EQ007,2025-07-25,Medium,Open,,Investigate repeated vibration
+27,EQ015,2025-02-21,Medium,Closed,2025-03-02,Inspect motor temperature
+28,EQ027,2026-04-21,Low,On Hold,,Check pressure readings
+29,EQ001,2025-09-05,Urgent,Closed,2025-09-25,Resolve leakage issue
+30,EQ006,2026-05-01,High,Closed,2026-05-07,Inspect motor temperature
+31,EQ024,2025-04-03,Low,Closed,2025-04-16,Investigate repeated vibration
+32,EQ006,2026-08-09,Medium,In Progress,,Check pressure readings
+33,EQ008,2025-07-31,Urgent,Closed,2025-08-17,Investigate repeated vibration
+34,EQ028,2025-01-10,Medium,On Hold,,Check pressure readings
+35,EQ006,2026-09-08,Medium,Open,,Inspect motor temperature
+36,EQ020,2025-11-09,Urgent,Closed,2025-11-22,Inspect motor temperature
+37,EQ015,2025-09-16,Urgent,In Progress,,Inspect motor temperature
+38,EQ022,2026-06-18,Low,On Hold,,Investigate repeated vibration
+39,EQ017,2026-01-19,High,Closed,2026-01-23,Resolve leakage issue
+40,EQ003,2025-12-11,High,Closed,2025-12-20,Inspect motor temperature
+41,EQ021,2025-11-02,Medium,In Progress,,Perform preventive service
+42,EQ025,2025-09-04,Urgent,Open,,Check pressure readings
+43,EQ011,2025-05-24,Urgent,Open,,Inspect motor temperature
+44,EQ009,2026-03-05,Urgent,On Hold,,Check pressure readings
+45,EQ002,2026-08-21,High,In Progress,,Check pressure readings
+46,EQ023,2025-08-16,High,On Hold,,Perform preventive service
+47,EQ010,2025-06-24,High,In Progress,,Investigate repeated vibration
+48,EQ016,2025-05-12,Medium,Closed,2025-05-23,Check pressure readings
+49,EQ003,2025-08-16,Medium,Closed,2025-08-26,Resolve leakage issue
+50,EQ026,2025-12-06,High,Closed,2025-12-25,Inspect motor temperature
+51,EQ015,2025-05-01,Low,On Hold,,Check pressure readings
+52,EQ019,2026-08-18,Urgent,Open,,Replace worn seal
+53,EQ017,2025-05-03,High,On Hold,,Resolve leakage issue
+54,EQ002,2025-06-04,Medium,In Progress,,Inspect motor temperature
+55,EQ014,2026-08-07,Medium,On Hold,,Inspect motor temperature
+56,EQ028,2025-07-04,Urgent,Open,,Inspect motor temperature
+57,EQ021,2025-07-01,Low,Closed,2025-07-02,Resolve leakage issue
+58,EQ009,2025-08-03,Medium,In Progress,,Resolve leakage issue
+59,EQ026,2025-04-01,Urgent,In Progress,,Check pressure readings
+60,EQ014,2026-02-18,Urgent,On Hold,,Resolve leakage issue
+61,EQ001,2025-02-08,High,In Progress,,Investigate repeated vibration
+62,EQ029,2025-11-26,Low,In Progress,,Check pressure readings
+63,EQ001,2025-09-12,High,In Progress,,Inspect motor temperature
+64,EQ005,2025-04-16,High,On Hold,,Replace worn seal
+65,EQ003,2025-02-16,High,Closed,2025-03-03,Check pressure readings
+66,EQ017,2026-09-03,Urgent,Closed,2026-09-08,Inspect motor temperature
+67,EQ029,2026-05-17,Medium,Closed,2026-05-23,Resolve leakage issue
+68,EQ001,2025-08-22,Medium,In Progress,,Replace worn seal
+69,EQ024,2025-01-23,Low,In Progress,,Inspect motor temperature
+70,EQ023,2025-02-08,High,On Hold,,Perform preventive service
+71,EQ020,2025-02-19,Low,Open,,Check pressure readings
+72,EQ027,2025-01-21,Low,Open,,Resolve leakage issue
+73,EQ015,2026-01-25,High,Open,,Resolve leakage issue
+74,EQ023,2025-06-06,Low,In Progress,,Inspect motor temperature
+75,EQ014,2025-04-14,Medium,Closed,2025-04-28,Investigate repeated vibration
+76,EQ017,2026-09-25,High,Open,,Investigate repeated vibration
+77,EQ026,2025-04-19,Medium,On Hold,,Perform preventive service
+78,EQ007,2025-09-27,High,In Progress,,Check pressure readings
+79,EQ014,2025-10-30,Low,In Progress,,Perform preventive service
+80,EQ016,2025-08-01,High,On Hold,,Replace worn seal
+81,EQ001,2025-01-14,Low,Open,,Perform preventive service
+82,EQ022,2026-05-21,Low,In Progress,,Perform preventive service
+83,EQ003,2025-04-14,Medium,Closed,2025-04-29,Inspect motor temperature
+84,EQ009,2026-04-21,Low,Open,,Replace worn seal
+85,EQ028,2025-02-10,High,Closed,2025-02-21,Resolve leakage issue
+86,EQ024,2025-04-29,Low,Open,,Investigate repeated vibration
+87,EQ028,2025-05-22,High,In Progress,,Inspect motor temperature
+88,EQ029,2026-03-25,Low,Closed,2026-04-06,Inspect motor temperature
+89,EQ006,2025-04-27,Urgent,On Hold,,Resolve leakage issue
+90,EQ009,2026-01-30,Urgent,On Hold,,Check pressure readings
+91,EQ029,2025-06-20,Medium,Open,,Check pressure readings
+92,EQ024,2025-03-02,Low,In Progress,,Resolve leakage issue
+93,EQ030,2026-08-28,Urgent,On Hold,,Replace worn seal
+94,EQ020,2026-01-24,Low,Closed,2026-01-29,Resolve leakage issue
+95,EQ030,2026-05-15,Urgent,Open,,Resolve leakage issue
+96,EQ002,2025-03-06,High,Closed,2025-03-07,Check pressure readings
+97,EQ028,2026-06-22,High,In Progress,,Perform preventive service
+98,EQ017,2026-09-26,Urgent,Open,,Check pressure readings
+99,EQ024,2025-09-12,High,On Hold,,Check pressure readings
+100,EQ022,2026-01-30,Low,In Progress,,Investigate repeated vibration
+101,EQ021,2025-06-10,Urgent,On Hold,,Replace worn seal
+102,EQ003,2026-05-19,Medium,Closed,2026-05-30,Inspect motor temperature
+103,EQ002,2026-06-04,Urgent,In Progress,,Resolve leakage issue
+104,EQ027,2025-08-29,Urgent,Open,,Resolve leakage issue
+105,EQ026,2026-08-10,Low,On Hold,,Resolve leakage issue
+106,EQ015,2025-11-20,Urgent,Open,,Check pressure readings
+107,EQ021,2025-01-19,Urgent,Open,,Resolve leakage issue
+108,EQ002,2026-07-25,Low,Open,,Perform preventive service
+109,EQ020,2025-11-08,Urgent,In Progress,,Inspect motor temperature
+110,EQ012,2025-02-25,Urgent,In Progress,,Inspect motor temperature
+111,EQ018,2026-09-27,High,On Hold,,Check pressure readings
+112,EQ015,2025-04-27,Medium,Open,,Investigate repeated vibration
+113,EQ011,2025-12-30,High,Closed,2026-01-03,Investigate repeated vibration
+114,EQ029,2025-06-18,Medium,On Hold,,Check pressure readings
+115,EQ024,2026-02-24,High,Open,,Perform preventive service
+116,EQ007,2025-07-12,Urgent,Open,,Replace worn seal
+117,EQ015,2025-07-15,Low,Closed,2025-07-29,Investigate repeated vibration
+118,EQ030,2026-08-26,Urgent,Open,,Resolve leakage issue
+119,EQ022,2026-08-27,Urgent,In Progress,,Investigate repeated vibration
+120,EQ017,2025-02-19,Urgent,On Hold,,Perform preventive service

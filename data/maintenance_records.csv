@@ -1,0 +1,221 @@
+maintenance_id,equipment_id,maintenance_date,maintenance_type,duration_hours,maintenance_cost,technician_team,notes
+1,EQ030,2026-08-02,Predictive,10.44,3173.37,Team B,Inspection completed
+2,EQ003,2026-04-26,Inspection,7.76,4002.02,Team A,Lubrication and alignment
+3,EQ017,2025-03-17,Predictive,5.81,284.28,Team C,Lubrication and alignment
+4,EQ003,2025-04-03,Inspection,5.82,2816.15,Team A,Inspection completed
+5,EQ030,2026-08-09,Corrective,4.2,2430.58,Team B,Routine service completed
+6,EQ015,2025-04-16,Predictive,11.8,513.21,Team B,Routine service completed
+7,EQ008,2026-03-25,Inspection,6.53,3088.05,Team C,Lubrication and alignment
+8,EQ030,2025-10-17,Inspection,5.2,1758.0,Team A,Lubrication and alignment
+9,EQ003,2025-12-04,Preventive,6.92,1994.16,Team C,Corrective work completed
+10,EQ028,2025-06-03,Predictive,1.44,3351.7,Team C,Lubrication and alignment
+11,EQ021,2026-02-06,Corrective,7.34,4696.21,Team C,Corrective work completed
+12,EQ013,2025-12-03,Corrective,8.21,4161.9,Team A,Inspection completed
+13,EQ017,2026-01-06,Preventive,4.67,983.29,Team B,Lubrication and alignment
+14,EQ025,2026-05-13,Corrective,3.11,774.07,Team A,Lubrication and alignment
+15,EQ028,2025-04-14,Preventive,8.11,4394.32,Team B,Corrective work completed
+16,EQ013,2025-06-07,Corrective,2.58,3494.94,Team B,Inspection completed
+17,EQ002,2026-02-25,Predictive,8.28,1263.9,Team D,Corrective work completed
+18,EQ010,2026-04-05,Corrective,6.64,1616.39,Team D,Component replaced
+19,EQ012,2026-08-08,Inspection,5.81,1480.68,Team D,Corrective work completed
+20,EQ017,2026-03-05,Corrective,9.89,4026.17,Team B,Lubrication and alignment
+21,EQ002,2026-05-08,Predictive,6.88,602.69,Team A,Lubrication and alignment
+22,EQ003,2025-06-14,Predictive,5.67,2615.43,Team D,Routine service completed
+23,EQ030,2025-08-16,Inspection,10.67,4659.31,Team D,Routine service completed
+24,EQ013,2026-05-30,Predictive,3.21,4973.17,Team C,Component replaced
+25,EQ001,2025-11-23,Preventive,10.15,3284.81,Team B,Component replaced
+26,EQ002,2025-10-21,Inspection,8.5,780.08,Team D,Inspection completed
+27,EQ020,2025-01-06,Preventive,0.72,1156.71,Team B,Corrective work completed
+28,EQ024,2026-09-16,Inspection,1.78,1511.7,Team C,Routine service completed
+29,EQ002,2025-09-02,Inspection,7.85,3151.77,Team A,Routine service completed
+30,EQ027,2026-05-27,Preventive,7.77,2917.73,Team B,Lubrication and alignment
+31,EQ014,2025-01-02,Predictive,3.27,2141.18,Team A,Corrective work completed
+32,EQ012,2025-03-11,Preventive,4.99,2403.66,Team D,Lubrication and alignment
+33,EQ009,2025-01-17,Predictive,9.57,1789.53,Team A,Corrective work completed
+34,EQ024,2025-12-07,Corrective,1.01,2775.47,Team B,Inspection completed
+35,EQ023,2026-05-06,Corrective,9.83,409.19,Team D,Routine service completed
+36,EQ010,2025-07-26,Preventive,9.6,4440.37,Team C,Lubrication and alignment
+37,EQ017,2026-02-12,Inspection,3.41,3791.13,Team B,Lubrication and alignment
+38,EQ012,2025-02-18,Predictive,3.64,4016.78,Team D,Inspection completed
+39,EQ024,2026-03-27,Inspection,4.4,1015.4,Team D,Lubrication and alignment
+40,EQ030,2026-06-16,Predictive,9.71,3662.7,Team A,Inspection completed
+41,EQ020,2025-07-04,Predictive,4.19,492.34,Team C,Lubrication and alignment
+42,EQ015,2026-09-10,Inspection,2.42,2275.15,Team D,Routine service completed
+43,EQ024,2025-12-28,Inspection,3.66,4902.13,Team A,Routine service completed
+44,EQ022,2026-02-20,Predictive,6.4,3774.5,Team B,Routine service completed
+45,EQ005,2026-09-15,Inspection,0.9,429.44,Team C,Lubrication and alignment
+46,EQ013,2026-08-04,Preventive,7.46,3427.4,Team C,Lubrication and alignment
+47,EQ015,2025-03-20,Corrective,6.59,2050.37,Team C,Component replaced
+48,EQ004,2025-01-27,Corrective,6.24,1996.24,Team A,Lubrication and alignment
+49,EQ025,2025-09-24,Inspection,2.97,3098.2,Team D,Component replaced
+50,EQ004,2025-05-19,Preventive,5.7,4503.53,Team D,Routine service completed
+51,EQ026,2025-11-24,Predictive,8.66,2794.99,Team C,Lubrication and alignment
+52,EQ028,2025-06-11,Corrective,9.63,2592.9,Team A,Component replaced
+53,EQ026,2025-05-23,Corrective,9.59,228.79,Team C,Inspection completed
+54,EQ026,2026-07-19,Corrective,7.54,522.46,Team C,Inspection completed
+55,EQ023,2026-05-06,Inspection,9.35,4134.36,Team A,Component replaced
+56,EQ011,2025-03-17,Inspection,5.86,2635.06,Team B,Corrective work completed
+57,EQ021,2026-08-25,Corrective,9.33,732.26,Team A,Routine service completed
+58,EQ017,2025-06-06,Predictive,2.39,1681.04,Team B,Lubrication and alignment
+59,EQ017,2025-10-18,Preventive,3.38,3211.78,Team C,Component replaced
+60,EQ021,2025-11-07,Preventive,6.28,926.32,Team B,Component replaced
+61,EQ022,2026-10-02,Predictive,10.19,2861.73,Team A,Routine service completed
+62,EQ002,2026-08-14,Predictive,7.99,3858.1,Team D,Corrective work completed
+63,EQ021,2025-02-01,Inspection,10.72,2773.33,Team C,Inspection completed
+64,EQ008,2026-02-20,Predictive,5.72,3474.21,Team B,Inspection completed
+65,EQ014,2026-05-11,Inspection,2.85,3072.64,Team C,Lubrication and alignment
+66,EQ024,2025-12-20,Inspection,2.0,1915.65,Team A,Lubrication and alignment
+67,EQ008,2026-04-23,Preventive,3.58,1314.8,Team A,Routine service completed
+68,EQ010,2026-01-29,Inspection,3.36,4340.01,Team B,Lubrication and alignment
+69,EQ030,2026-08-15,Predictive,2.68,880.78,Team D,Inspection completed
+70,EQ029,2025-11-12,Inspection,0.77,4731.64,Team D,Component replaced
+71,EQ007,2026-08-21,Predictive,1.06,1478.65,Team D,Lubrication and alignment
+72,EQ018,2025-01-09,Preventive,5.46,4424.03,Team C,Inspection completed
+73,EQ012,2025-02-16,Inspection,1.09,2852.9,Team C,Corrective work completed
+74,EQ010,2025-03-17,Inspection,6.3,3845.58,Team C,Corrective work completed
+75,EQ022,2026-09-18,Preventive,1.98,573.74,Team C,Lubrication and alignment
+76,EQ018,2026-01-10,Corrective,2.79,2594.7,Team A,Routine service completed
+77,EQ002,2025-05-21,Predictive,9.75,2644.73,Team B,Corrective work completed
+78,EQ029,2026-06-12,Corrective,4.27,3104.03,Team B,Inspection completed
+79,EQ020,2025-11-03,Predictive,6.33,2597.6,Team D,Corrective work completed
+80,EQ010,2026-05-02,Preventive,4.74,3401.65,Team D,Corrective work completed
+81,EQ010,2025-01-28,Inspection,3.55,3312.4,Team B,Routine service completed
+82,EQ019,2026-05-07,Corrective,6.53,3633.8,Team D,Component replaced
+83,EQ027,2025-09-06,Preventive,7.08,3532.55,Team B,Routine service completed
+84,EQ015,2025-11-18,Inspection,2.24,3483.45,Team D,Corrective work completed
+85,EQ025,2026-09-19,Inspection,10.54,3705.6,Team A,Component replaced
+86,EQ017,2025-08-01,Predictive,11.98,2444.02,Team D,Lubrication and alignment
+87,EQ006,2026-04-16,Predictive,6.78,3411.76,Team C,Corrective work completed
+88,EQ016,2025-07-16,Corrective,3.71,1562.65,Team C,Lubrication and alignment
+89,EQ023,2025-08-01,Inspection,4.15,1809.14,Team C,Lubrication and alignment
+90,EQ004,2026-08-11,Inspection,10.8,2033.21,Team C,Component replaced
+91,EQ010,2025-02-13,Predictive,11.49,487.24,Team D,Lubrication and alignment
+92,EQ024,2026-05-06,Corrective,2.82,2739.03,Team C,Component replaced
+93,EQ004,2026-09-23,Corrective,3.29,3382.19,Team B,Component replaced
+94,EQ002,2025-04-13,Inspection,4.3,2414.78,Team B,Routine service completed
+95,EQ018,2025-06-11,Inspection,8.01,4415.17,Team D,Inspection completed
+96,EQ021,2025-07-24,Predictive,4.19,3264.9,Team A,Corrective work completed
+97,EQ008,2026-07-02,Preventive,11.0,957.82,Team B,Routine service completed
+98,EQ027,2026-02-11,Inspection,2.64,3770.12,Team C,Routine service completed
+99,EQ001,2025-11-02,Preventive,11.18,1741.71,Team D,Corrective work completed
+100,EQ017,2026-05-21,Corrective,10.29,2393.3,Team B,Routine service completed
+101,EQ011,2025-06-16,Inspection,7.96,3621.13,Team A,Lubrication and alignment
+102,EQ026,2025-10-30,Corrective,2.52,4295.12,Team D,Inspection completed
+103,EQ017,2025-12-02,Preventive,5.11,567.39,Team B,Inspection completed
+104,EQ011,2025-09-12,Preventive,3.5,1254.05,Team C,Lubrication and alignment
+105,EQ010,2026-08-20,Preventive,3.51,1861.81,Team B,Routine service completed
+106,EQ022,2025-05-02,Inspection,4.03,2086.54,Team C,Routine service completed
+107,EQ021,2025-10-30,Predictive,7.57,1173.73,Team B,Inspection completed
+108,EQ005,2026-04-11,Predictive,5.28,2791.25,Team D,Corrective work completed
+109,EQ026,2025-08-12,Corrective,8.32,3019.49,Team A,Corrective work completed
+110,EQ015,2026-06-25,Predictive,1.4,2864.43,Team A,Corrective work completed
+111,EQ029,2026-06-02,Corrective,7.09,834.28,Team C,Corrective work completed
+112,EQ015,2025-04-30,Corrective,8.74,2495.26,Team D,Routine service completed
+113,EQ015,2025-05-16,Inspection,5.75,382.91,Team D,Lubrication and alignment
+114,EQ024,2025-01-23,Inspection,3.43,114.78,Team B,Corrective work completed
+115,EQ003,2025-02-16,Inspection,4.46,412.42,Team A,Routine service completed
+116,EQ030,2026-04-29,Preventive,3.8,981.91,Team B,Inspection completed
+117,EQ012,2026-01-27,Inspection,10.5,4543.16,Team D,Routine service completed
+118,EQ022,2026-07-07,Corrective,8.02,1804.07,Team B,Corrective work completed
+119,EQ013,2026-06-26,Corrective,8.87,1191.18,Team A,Routine service completed
+120,EQ010,2026-04-20,Inspection,6.62,4134.47,Team B,Inspection completed
+121,EQ012,2025-06-08,Predictive,2.67,4388.52,Team A,Routine service completed
+122,EQ026,2026-03-06,Preventive,3.27,429.73,Team A,Inspection completed
+123,EQ020,2025-02-19,Corrective,9.02,2071.1,Team B,Corrective work completed
+124,EQ007,2025-02-27,Corrective,6.29,1517.39,Team C,Corrective work completed
+125,EQ020,2025-11-25,Corrective,3.97,801.98,Team B,Inspection completed
+126,EQ010,2025-10-09,Preventive,6.9,2999.17,Team B,Inspection completed
+127,EQ018,2026-05-23,Preventive,11.68,4713.77,Team D,Corrective work completed
+128,EQ011,2026-03-03,Inspection,2.22,1944.65,Team D,Component replaced
+129,EQ028,2025-08-19,Predictive,10.36,807.32,Team D,Routine service completed
+130,EQ018,2026-02-27,Inspection,6.91,757.05,Team B,Lubrication and alignment
+131,EQ007,2025-12-05,Preventive,11.11,4250.95,Team A,Corrective work completed
+132,EQ024,2025-07-15,Preventive,3.59,3400.99,Team A,Routine service completed
+133,EQ007,2026-08-25,Corrective,6.01,4360.42,Team C,Lubrication and alignment
+134,EQ030,2025-01-16,Corrective,11.28,4814.18,Team A,Inspection completed
+135,EQ030,2025-09-06,Corrective,5.06,1272.72,Team C,Lubrication and alignment
+136,EQ013,2026-04-23,Predictive,4.05,1862.26,Team D,Inspection completed
+137,EQ004,2026-04-26,Predictive,11.01,1916.45,Team D,Routine service completed
+138,EQ019,2025-08-15,Corrective,0.69,2811.23,Team D,Lubrication and alignment
+139,EQ005,2025-07-20,Predictive,3.15,2891.97,Team B,Inspection completed
+140,EQ018,2025-12-12,Predictive,9.28,2494.24,Team D,Inspection completed
+141,EQ006,2025-12-27,Corrective,2.11,2778.08,Team B,Corrective work completed
+142,EQ021,2025-03-02,Preventive,10.15,464.22,Team A,Routine service completed
+143,EQ014,2025-05-21,Corrective,1.28,840.05,Team B,Corrective work completed
+144,EQ015,2026-01-18,Preventive,7.61,3367.1,Team D,Inspection completed
+145,EQ001,2025-01-07,Inspection,0.64,2694.15,Team C,Corrective work completed
+146,EQ010,2025-01-18,Inspection,9.77,4557.89,Team A,Routine service completed
+147,EQ017,2025-06-02,Corrective,2.71,2679.63,Team C,Lubrication and alignment
+148,EQ026,2026-02-11,Preventive,4.79,2089.53,Team B,Component replaced
+149,EQ010,2025-03-24,Preventive,1.58,1958.39,Team D,Routine service completed
+150,EQ021,2025-01-10,Corrective,1.45,4242.12,Team C,Corrective work completed
+151,EQ028,2025-04-08,Preventive,3.14,4516.24,Team D,Lubrication and alignment
+152,EQ002,2025-03-18,Predictive,10.84,2861.2,Team A,Component replaced
+153,EQ030,2025-11-19,Preventive,11.56,2976.48,Team D,Routine service completed
+154,EQ010,2025-06-16,Corrective,7.02,4262.27,Team C,Inspection completed
+155,EQ025,2025-05-24,Preventive,6.26,4874.18,Team A,Routine service completed
+156,EQ014,2025-08-26,Preventive,4.42,3868.13,Team D,Lubrication and alignment
+157,EQ001,2025-10-07,Inspection,6.14,1843.47,Team D,Inspection completed
+158,EQ006,2026-08-23,Inspection,1.49,3131.22,Team B,Routine service completed
+159,EQ003,2025-10-02,Corrective,4.87,3941.06,Team B,Inspection completed
+160,EQ011,2026-01-05,Preventive,1.55,4720.51,Team D,Lubrication and alignment
+161,EQ025,2025-10-04,Preventive,2.02,1018.22,Team D,Corrective work completed
+162,EQ018,2026-06-09,Inspection,1.69,539.13,Team A,Corrective work completed
+163,EQ020,2025-11-29,Inspection,0.64,2127.67,Team A,Corrective work completed
+164,EQ029,2025-09-06,Corrective,8.38,930.56,Team C,Lubrication and alignment
+165,EQ009,2026-05-20,Corrective,1.23,2229.91,Team D,Lubrication and alignment
+166,EQ016,2025-03-20,Predictive,3.39,1308.29,Team D,Corrective work completed
+167,EQ020,2025-07-20,Inspection,1.73,1592.82,Team D,Lubrication and alignment
+168,EQ027,2026-09-28,Inspection,9.75,1714.75,Team C,Inspection completed
+169,EQ027,2026-09-01,Corrective,3.96,3055.74,Team B,Inspection completed
+170,EQ011,2025-07-01,Inspection,11.64,1528.1,Team D,Corrective work completed
+171,EQ026,2025-09-06,Predictive,4.82,4100.82,Team D,Lubrication and alignment
+172,EQ004,2026-08-01,Corrective,7.31,2773.58,Team A,Inspection completed
+173,EQ023,2025-08-03,Inspection,9.67,4173.28,Team A,Inspection completed
+174,EQ022,2026-05-27,Corrective,7.78,1285.9,Team B,Inspection completed
+175,EQ026,2026-01-22,Preventive,5.66,3029.88,Team D,Corrective work completed
+176,EQ017,2026-03-05,Preventive,9.59,1861.69,Team A,Routine service completed
+177,EQ025,2025-09-12,Predictive,2.41,3102.12,Team D,Lubrication and alignment
+178,EQ026,2026-03-17,Preventive,0.62,1367.82,Team B,Inspection completed
+179,EQ012,2026-02-05,Inspection,9.38,2984.09,Team B,Lubrication and alignment
+180,EQ001,2026-05-10,Preventive,3.9,4610.68,Team A,Routine service completed
+181,EQ027,2025-05-26,Predictive,4.09,2331.13,Team B,Corrective work completed
+182,EQ016,2025-12-23,Inspection,1.62,3637.77,Team D,Lubrication and alignment
+183,EQ003,2025-11-04,Preventive,9.82,663.92,Team C,Routine service completed
+184,EQ022,2025-06-18,Corrective,6.43,2804.36,Team C,Corrective work completed
+185,EQ014,2026-04-19,Corrective,9.67,3185.83,Team B,Inspection completed
+186,EQ013,2025-01-30,Corrective,5.67,2204.81,Team A,Component replaced
+187,EQ007,2025-10-13,Preventive,7.14,4017.56,Team B,Lubrication and alignment
+188,EQ011,2025-07-21,Inspection,1.81,3386.44,Team D,Corrective work completed
+189,EQ021,2025-11-17,Inspection,7.53,2976.32,Team C,Lubrication and alignment
+190,EQ028,2026-04-14,Corrective,9.86,3559.34,Team C,Corrective work completed
+191,EQ019,2025-03-28,Corrective,4.1,1269.01,Team A,Component replaced
+192,EQ012,2025-05-25,Inspection,5.31,775.55,Team D,Inspection completed
+193,EQ006,2026-05-14,Corrective,6.88,2499.25,Team B,Component replaced
+194,EQ011,2026-04-07,Preventive,10.45,4764.03,Team D,Component replaced
+195,EQ007,2026-01-29,Inspection,5.21,2509.46,Team D,Inspection completed
+196,EQ006,2025-03-26,Preventive,9.65,1180.59,Team A,Lubrication and alignment
+197,EQ008,2026-07-05,Predictive,2.43,2340.87,Team D,Corrective work completed
+198,EQ017,2025-04-26,Preventive,3.58,2761.22,Team C,Corrective work completed
+199,EQ027,2025-02-12,Inspection,6.78,4949.9,Team A,Component replaced
+200,EQ010,2025-02-03,Inspection,3.52,4324.78,Team A,Inspection completed
+201,EQ028,2025-05-01,Corrective,2.91,3714.3,Team C,Corrective work completed
+202,EQ021,2026-03-15,Corrective,7.59,3945.76,Team B,Routine service completed
+203,EQ019,2025-12-26,Predictive,7.36,925.05,Team C,Lubrication and alignment
+204,EQ019,2025-10-01,Preventive,2.06,3775.46,Team D,Routine service completed
+205,EQ009,2025-05-10,Corrective,3.37,3585.83,Team B,Inspection completed
+206,EQ016,2025-05-26,Predictive,7.72,1938.34,Team A,Routine service completed
+207,EQ013,2026-06-12,Predictive,8.49,4398.86,Team D,Inspection completed
+208,EQ011,2026-08-19,Preventive,10.49,4251.12,Team A,Inspection completed
+209,EQ021,2026-01-02,Preventive,9.65,2048.81,Team D,Component replaced
+210,EQ016,2025-10-02,Predictive,10.03,1755.0,Team B,Corrective work completed
+211,EQ028,2026-05-12,Predictive,10.78,3835.04,Team A,Routine service completed
+212,EQ021,2026-04-16,Preventive,1.93,4302.49,Team D,Inspection completed
+213,EQ001,2026-03-15,Corrective,11.95,4556.1,Team C,Component replaced
+214,EQ028,2025-10-08,Preventive,8.03,1326.91,Team C,Component replaced
+215,EQ002,2026-02-10,Predictive,8.85,3800.64,Team D,Routine service completed
+216,EQ023,2025-04-08,Preventive,2.95,481.9,Team B,Corrective work completed
+217,EQ022,2026-04-01,Preventive,0.59,1783.51,Team A,Inspection completed
+218,EQ023,2025-05-16,Inspection,1.31,1977.04,Team A,Routine service completed
+219,EQ011,2026-01-12,Predictive,2.08,3889.96,Team B,Component replaced
+220,EQ003,2026-06-28,Preventive,7.52,904.17,Team C,Component replaced
